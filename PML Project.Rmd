@@ -1,0 +1,14 @@
+---
+title: "PML Project"
+output: pdf_document
+---
+
+```{r}
+training <- read.csv("pml-training.csv")
+test <- read.csv("pml-testing.csv")
+str(training)
+unique(training$classe)
+dim(training)
+with(training, 2, sum(is.na()))
+```
+
